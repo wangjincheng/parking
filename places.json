@@ -1,0 +1,8 @@
+{ "pkid" : "1", "state" : "free", "loc" : {  "longitude" : 121.4428690000 ,"latitude" : 31.0320310000}, "price" : 100, "owner" : "wang" }
+{ "pkid" : "2", "state" : "free", "loc" : {  "longitude" : 121.4348990000 ,"latitude" : 31.0343280000}, "price" : 100, "owner" : "lee" }
+{ "pkid" : "3", "state" : "free", "loc" : {  "longitude" : 121.4438690000 ,"latitude" : 31.0340310000}, "price" : 100, "owner" : "zhang" }
+{ "pkid" : "4", "state" : "free", "loc" : {  "longitude" : 121.4427690000 ,"latitude" : 31.0332310000}, "price" : 100, "owner" : "lu" }
+{ "pkid" : "5", "state" : "free", "loc" : {  "longitude" : 121.4448590000 ,"latitude" : 31.0340380000}, "price" : 100, "owner" : "he" }
+{ "pkid" : "6", "state" : "free", "loc" : {  "longitude" : 121.4458290000 ,"latitude" : 31.0320360000}, "price" : 100, "owner" : "james" }
+{ "pkid" : "7", "state" : "free", "loc" : {  "longitude" : 121.4328690000 ,"latitude" : 31.0330320000}, "price" : 100, "owner" : "paul" }
+{ "pkid" : "8", "state" : "free", "loc" : {  "longitude" : 121.4428490000 ,"latitude" : 31.0320210000}, "price" : 100, "owner" : "zhu" }
