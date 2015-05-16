@@ -3,7 +3,7 @@ var router = express.Router();
 
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-var url = 'mongodb://119.29.78.47:27017/parking';
+var url = 'mongodb://119.29.57.178:27017/parking';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -33,5 +33,24 @@ router.get('/getAroundPlaces', function(req, res, next) {
       		db.close();
   		});
 	});
+});
+
+router.get('/updateParkState',function(req,res,next){
+  var updateParkState=function(db,callback)
+  {
+    db.collection('places').update({pkid:req.query.pkid},{$set: {state: req.query.state}},{w:1},function(err){
+      if(err)
+        res.send('update error');
+      else
+        res.send('update success');
+    });
+  };
+
+  MongoClient.connect(url,function(err,db){
+    assert.equal(null,err);
+    updateParkState(db,function(err,db){
+      db.close();
+    });
+  });
 });
 module.exports = router;
