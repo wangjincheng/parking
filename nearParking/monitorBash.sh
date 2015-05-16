@@ -8,7 +8,7 @@ while true;
         # 2008.08.21 -I/--head -s/--silent  
         #if curl -s -I --connect-timeout 5 --max-time 10 http://localhost:$1/; then  
         # 2010.02.16 add 200 OK test  
-        if curl -s -I --connect-timeout 5 --max-time 10 http://119.29.78.47:3000 | grep -q '200 OK';  
+        if curl -s -I --connect-timeout 5 --max-time 10 http://119.29.57.178:3000 | grep -q '200 OK';  
         then  
                 echo "$(date)  Nodejs maybe OK"  >> check.$(date +%Y-%m-%d).log 
         else  
