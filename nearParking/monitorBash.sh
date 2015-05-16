@@ -3,7 +3,7 @@
 # 每隔10分钟检查一次网页是否正常   
 while true;  
         do  
-                npm start & >> check.$(date +%Y-%m-%d).log
+                npm start >> check.$(date +%Y-%m-%d).log
                 sleep 30
                 echo "$(date)  Nodejs check once"  >> check.$(date +%Y-%m-%d).log
         # 2008.08.21 -I/--head -s/--silent  
@@ -14,7 +14,7 @@ while true;
                 echo "$(date)  Nodejs maybe OK"  >> check.$(date +%Y-%m-%d).log 
         else  
                 echo "$(date)  Nodejs maybe FAULT" >> check.$(date +%Y-%m-%d).log
-                npm start & >> check.$(date +%Y-%m-%d).log
+                npm start >> check.$(date +%Y-%m-%d).log
         fi  
         done  
  
