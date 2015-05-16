@@ -3,7 +3,8 @@
 # 每隔10分钟检查一次网页是否正常   
 while true;  
         do  
-                sleep 2  
+                npm start & >> check.$(date +%Y-%m-%d).log
+                sleep 30
                 echo "$(date)  Nodejs check once"  >> check.$(date +%Y-%m-%d).log
         # 2008.08.21 -I/--head -s/--silent  
         #if curl -s -I --connect-timeout 5 --max-time 10 http://localhost:$1/; then  
